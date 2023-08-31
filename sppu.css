@@ -256,15 +256,21 @@
 #sppu-logo2{
     grid-row: 1/3;
     justify-self: right;
+    width: 80px;
 
 }
 .top-heading2{
     text-align: center;
     font-weight: 600;
+    
+}
+#sppuHead2{
+    font-size: 1.1em;line-height: 20px;
 }
 .info-container{
     font-weight: 600;
     margin-bottom: 40px;
+    margin-top: 6px;
 }
 #mami{
     justify-self: right;
@@ -272,9 +278,8 @@
 .detail-1{
     width: 100%;
     display: grid;
-    grid-template-columns: 200px 1fr 1fr;
+    grid-template-columns: 300px 120px 1fr;
     grid-template-rows: 1fr;
-    justify-items: right;
 }
 .detail-2{
     width: 100%;
@@ -288,6 +293,63 @@ table{
 }
 thead{
     font-weight: 700;
+}
+#resData{
+    font-weight: 700;margin-left: 8%;
+}
+#grds{
+    font-weight: 700;margin-bottom: 40px;margin-left: 8%;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .main-container{
+        padding: 15px;
+    }
+    .head-container{
+        grid-template-columns: 75px 1fr;padding-bottom: 10px;
+    }
+    .info-container{
+        margin-bottom: 10px;
+    }
+    #sppu-logo2{
+        width: 50px;
+    }
+   #sppuHead{
+        font-size: 15.6px;
+    }
+    #sppuHead2{
+        font-size: 11px;
+        line-height: 12px;
+    }
+    .info-container{
+        font-size: 0.6rem;
+        font-weight: 650;
+    }
+    .detail-1{        
+        grid-template-columns: 120px 50px 1fr;
+    }
+    table{
+        font-size: 0.6rem;
+    }
+    .footer{
+        font-size: 0.55rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 100;
+        letter-spacing: 0.5px;
+    }
+    #resData,#grds{
+        font-size: 0.6rem;
+    }
+    #grds{
+        margin-bottom: 25px;
+    }
+    #resData{
+        margin-bottom: 8px;
+    }
+    .note,.detail-1,.detail-2{
+        margin-bottom: 5px;
+    }
 }
 
 
