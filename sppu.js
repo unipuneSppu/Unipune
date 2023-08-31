@@ -16,8 +16,8 @@ function robot(){
     let checkBox = document.getElementById("capCheck");
     console.log(checkBox.value);
     if(checkBox.value == "false"){
-        checkBox.value == "true";
-        console.log(checkBox.value)
+        checkBox.value = "true";
+        return true;
     }
 }
 
@@ -45,8 +45,8 @@ function showTime(){
         }
     
     }else{
-        if(seatList.includes(seatNumber.trim())){
-            if(momName.toUpperCase() == STUDENTS[seatNumber].motherName){
+        if(seatList.includes(seatNumber.toLowerCase().trim())){
+            if(momName.toUpperCase() == STUDENTS[seatNumber.toLowerCase()].motherName){
                 showResult();
             }else{
                 console.log("mother name not match")
