@@ -84,7 +84,7 @@ function showResult(){
     let ref = 0;
 
     for(let i = 0;i < seatList.length;i++){
-        if(seatList[i] == seatNumber.trim(){
+        if(seatList[i] == seatNumber.trim()){
             if(momName.toUpperCase().trim() == STUDENTS[seatNumber].motherName){
                 seatNoOut.innerText = seatNumber.toUpperCase();
                 studentname.innerText = STUDENTS[seatNumber].name;
