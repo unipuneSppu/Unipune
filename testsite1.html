@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th,td{
+            width: 200px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <p>Enter Roll Number : <input type="text" id="takeit" value=" "></p>
+    <button onclick="showDetails()">Search</button>
+    <table id="mytab">
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+        </tr>
+    </table>
+    <script>
+        //database
+        let STUDENTS = {
+            "f301" : {
+                "name" : "ramchandra",
+                "gender" : "male",
+                "age" : "30"
+            },
+            "f302" : {
+                "name": "sita",
+                "gender" : "female",
+                "age" : "25"
+            },
+            "f303" : {
+                "name": "laxman",
+                "gender" : "male",
+                "age" : "28"
+            },
+            "f304" : {
+                "name": "bharat",
+                "gender" : "male",
+                "age" : "35"
+            },
+            "f305" : {
+                "name": "ramesh",
+                "gender" : "male",
+                "age" : "64"
+            },
+            "f306" : {
+                "name": "jyoti",
+                "gender" : "female",
+                "age" : "18"
+            }
+        }
+
+        function showDetails(){
+            let input = document.getElementById("takeit").value.trim();
+            let rollCall = Object.keys(STUDENTS);
+            let Xnode = document.createElement("tr")
+            document.getElementById("mytab").appendChild(Xnode)
+            let textnode = "";
+            for(let i = 0;i < rollCall.length;i++){
+               // console.log(STUDENTS[rollCall[i]])
+                if(rollCall[i] == input){
+                    textnode += "<td>"+STUDENTS[rollCall[i]].name+"</td>"+"<td>"+STUDENTS[rollCall[i]].gender+"</td>"+"<td>"+STUDENTS[rollCall[i]].age+"</td>"
+                    document.getElementsByTagName("tr")[1].innerHTML = textnode;
+                    break;
+                }else{
+                    console.log("invalid input")
+                }
+                                
+            }
+
+        }
+    </script>
+</body>
+</html>
+

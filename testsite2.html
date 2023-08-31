@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table,tr,th,td{
+      border-collapse: collapse;
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="table"></div>
+  <script>
+
+    function funcCall(){
+      var myArray = [
+        {name : "ram",id : 121, age : 27},
+        {name : "sham",id : 323, age : 54},
+        {name : "gopal",id : 335, age : 66},
+        {name : "murli",id : 767, age : 98},
+        {name : "satyavati",id : 786, age : 34}
+      ]
+
+      let html = "<table>"
+
+      setTimeout(() => {
+        html += "<thead>";
+        html += "<tr>";
+        html += "<td>" + "Name" + "</td>";
+        html += "<td>" + "Id" + "</td>";
+        html += "<td>" + "Age" + "</td>";
+        html += "</tr>";
+        html += "</thead>";
+        for(let i = 0;i < myArray.length;i++){
+          html += "<tr>";
+          html += "<td>" + myArray[i].name + "</td>";
+          html += "<td>" + myArray[i].id + "</td>";
+          html += "<td>" + myArray[i].age + "</td>";
+          html += "</tr>";        
+      }
+      document.getElementById("table").innerHTML = html;
+      },500);
+    }
+
+    funcCall();
+  </script> 
+
+  <!--
+
+    //SEM 1
+    107001 ENGINEERING MATHEMATIC-I
+    107002 ENGINEERING PHYSICS / 107009 ENGINEERING CHEMISTRY
+    102003 SYSTEMS IN MECHANICAL ENGINEERING
+    103004 BASIC ELECTRICAL ENGINEERING / 104010 BASIC ELECRONIC ENGINEERING
+    110005 PROGRAMMING AND PROBLEM SOLVING / 101011 ENGINEERING MECHANICS
+    111006 WORKSHOP
+    101007 AUDIT COURSE 1ST
+
+    101007 Environmental Studies-I
+
+    //SEM 2
+    107008 ENGINEERING MATHEMATICS-II
+    107002 ENGINEERING PHYSICS / 107009 ENGINEERING CHEMISTRY
+    103004 BASIC ELECTRICAL ENGINEERING / 104010 BASIC ELECTRONICS ENGINEERING
+    110005 PROGRAMMING AND PROBLEM SOLVING / 101011 ENGINEERING MECHANICS
+    102012 ENGINEERING GRAPHICS
+    110013 PROJECT BASED LEARNING
+    AUDIT COURSE 2
+
+    101014 ENVIRONMENTAL STUDIES-II
+
+  
+  -->
+</body>
+</html>
