@@ -47,7 +47,7 @@ function showTime(){
     
     }else{
         if(seatList.includes(seatNumber.toLowerCase().trim())){
-            if(momName.toUpperCase().trim() == STUDENTS[seatNumber.toLowerCase()].motherName){
+            if(momName.toUpperCase().trim() == STUDENTS[seatNumber.toLowerCase()].motherName.trim()){
                 showResult();
             }else{
                 console.log("mother name not match")
@@ -86,7 +86,7 @@ function showResult(){
 
     for(let i = 0;i < seatList.length;i++){
         if(seatList[i] == seatNumber.trim()){
-            if(momName.toUpperCase().trim() == STUDENTS[seatNumber].motherName){
+            if(momName.toUpperCase().trim() == STUDENTS[seatNumber].motherName.trim()){
                 seatNoOut.innerText = seatNumber.toUpperCase();
                 studentname.innerText = STUDENTS[seatNumber].name;
                 motherNameOut.innerText = STUDENTS[seatNumber].motherName;
