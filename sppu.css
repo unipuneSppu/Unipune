@@ -300,7 +300,9 @@ thead{
 #grds{
     font-weight: 700;margin-bottom: 40px;margin-left: 8%;
 }
-
+.footer{
+    text-align: justify;
+}
 
 @media only screen and (max-width: 800px) {
     .main-container{
@@ -337,6 +339,7 @@ thead{
         font-family: 'Times New Roman', Times, serif;
         font-weight: 100;
         letter-spacing: 0.5px;
+        text-align: justify;
     }
     #resData,#grds{
         font-size: 0.6rem;
