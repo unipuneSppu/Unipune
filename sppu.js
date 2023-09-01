@@ -23,7 +23,8 @@ function robot(){
 
 
 function showTime(){
-    let seatNumber = document.getElementById("rollNum").value;
+    let seatNumber = document.getElementById("rollNum").value.toLowerCase().trim();
+    console.log(seatNumber + "    jkbkbvkjb")
     let momName = document.getElementById("momName").value;
     let seatList = Object.keys(STUDENTS);
     //error msg
@@ -70,7 +71,7 @@ function showResult(){
 
 
     // inputs
-    let seatNumber = document.getElementById("rollNum").value.toLowerCase();
+    let seatNumber = document.getElementById("rollNum").value.toLowerCase().trim();
     let momName = document.getElementById("momName").value;
     let seatList = Object.keys(STUDENTS)
 
@@ -125,7 +126,7 @@ function showResult(){
           html += "<td>" + myArray[i].subjectName + "</td>";
           html += "<td>" + myArray[i].crd + "</td>";
           html += "<td>" + myArray[i].grd + "</td>";
-          html += "<td>" + myArray[i].gp + "</td>";
+          html += "<td>" + myArray[i].GP + "</td>";
           html += "</tr>";        
       }
       document.getElementById("table").innerHTML = html;
