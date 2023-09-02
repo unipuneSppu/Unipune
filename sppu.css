@@ -268,7 +268,7 @@
     font-size: 1.1em;line-height: 20px;
 }
 .info-container{
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 40px;
     margin-top: 6px;
 }
@@ -304,7 +304,7 @@ thead{
     text-align: justify;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 650px) {
     .main-container{
         padding: 15px;
     }
@@ -319,10 +319,12 @@ thead{
     }
    #sppuHead{
         font-size: 15.6px;
+        font-weight: 700;
     }
     #sppuHead2{
         font-size: 11px;
         line-height: 12px;
+        font-weight: 650;
     }
     .info-container{
         font-size: 0.6rem;
@@ -335,10 +337,9 @@ thead{
         font-size: 0.6rem;
     }
     .footer{
-        font-size: 0.55rem;
+        font-size: 0.6rem;
         font-family: 'Times New Roman', Times, serif;
         font-weight: 100;
-        letter-spacing: 0.5px;
         text-align: justify;
     }
     #resData,#grds{
