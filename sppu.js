@@ -58,6 +58,9 @@ function showTime(){
             seatErr.innerText = "Invalid Seat No."
         }
     }
+    setTimeout(()=>{
+        window.print()
+    },500)
 }
 
 
